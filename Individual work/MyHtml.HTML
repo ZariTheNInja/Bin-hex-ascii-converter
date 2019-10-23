@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+     <script src="MyJavascript.JS"></script>
+  </head>
+    <body>
+      <form>
+          <div>
+              <h2>Binary</h2>
+              <input id="bin"><br />
+              <button onclick="convert(document.getElementById('bin').value, 'binOutput', 'bin', 'Hex')"> Convert To Hexadecimal</button>
+              <button onclick="convert(document.getElementById('bin').value, 'binOutput', 'bin', 'Hex')"> Convert To Ascii</button>
+              <span id="binOutput"></span>
+            </div>
+
+            <div>
+                <h2>Hex</h2>
+                <input id="hex"><br />
+                <button onclick="convert(document.getElementById('bin').value, 'binOutput', 'Hex', 'Binary')"> Convert To Hexadecimal</button>
+                <button onclick="convert(document.getElementById('bin').value, 'binOutput', 'Hex', 'Ascii')"> Convert To Ascii</button>
+                <span id="hexOutput"></span>
+              </div>
+
+              <div>
+                  <h2>Ascii</h2>
+                  <input id="ascii"><br />
+                  <button onclick="convert(document.getElementById('bin').value, 'binOutput', 'bin', 'Hex')"> Convert To Hexadecimal</button>
+                  <button onclick="convert(document.getElementById('bin').value, 'binOutput', 'bin', 'Hex')"> Convert To Ascii</button>
+                  <span id="asciiOutput"></span>
+                </div>
+
+    </form>
+  </body>
+</html>
